@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurgerKing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Circle">
+
+    </div>
+    <section>
+        <header>
+            <a href="#"><img src="img/1.jpg" class="logo"></a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul> 
+
+        </header>
+        <div class="Content">
+            <div class="TextBox">
+                <h2>It's not just Burger <br>It's <span>BurgerKing</span></h2>
+                <p>The company itself is a very successful company. When all of these great men are repulsed by hatred, he will never run away from them. And when the flight of the accusers is repulsed, who shall provide for the most worthy of their advantage? Blinded to explain the times to be happy?</p>
+                <br>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/5.png" class="BurgerKing">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><a href="#"><img src="img/2.jpeg" onclick="imgSlider('img/img1.png'); changeCirclecolor('#017143')"></a></li>
+            <li><a href="#"><img src="img/11.webp" onclick="imgSlider('img/img2.png'); changeCirclecolor('#eb7495')"></a></li>
+            <li><a href="#"><img src="img/img1.jpg" onclick="imgSlider('img/img3.png'); changeCirclecolor('#d752b1')"></a></li>
+        </ul>
+       
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCirclecolor(color){
+            const Circle = document.querySelector('.Circle');
+            Circle.style.backgroud = color;
+        }
+    </script>
+</body>
+</html>
